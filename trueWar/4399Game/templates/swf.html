@@ -1,0 +1,77 @@
+$def with (data)
+<!doctype html>
+
+<html>
+	<head>
+		<title>$:data.name</title>
+		<meta charset='UTF-8'>
+		<style type='text/css'>
+			*{margin:0;pidding:0;}
+			.box{
+				width:1000px;
+				height:100%;
+				margin:100px auto;
+			}
+			.box ul{
+				width:900px;
+				height:800px;
+				margin:0px auto;
+			}
+			.box ul li{
+				width:72 px;
+				height:72 px;
+				float: left;
+				list-style-type:none;
+				padding-left:15px;
+				padding-bottom:60px;
+			}
+			.header ul li a{
+				font-size:26px;
+				line-height:72px;
+			}
+			.header{
+				width:1000px;
+				height:100px;
+				margin:0px auto;
+				background:#ccffcc;
+			}
+			.header ul{
+				width:900 px;
+				height:800 px;
+				margin:0 px auto;
+			}
+			.header ul li {
+				float:left;
+				padding-left:10px;
+				list-style-type:none;
+				padding-left:100px;
+			}
+			.box text{
+				width:400 px;
+				height:110 px;
+				position:absolute;
+				top:110px;
+				left:700px;
+				font-size:40px;
+			}
+		</style>
+	</head>
+
+<body>
+	<div class="header">
+		<ul>
+			<li><a href="/">首页</a></li>
+			<li><a href="http://www.tanzhouedu.com" target="_blank">电商平台</a></li>
+			<li><a href="http://www.litianqiang.com" target="_blank">搜索引擎</a></li>
+			<li><a href="http://bbs.litianqiang.com">python论坛</a></li>
+		</ul>
+	</div>
+	<div class="box">
+	<iframe marginWidth=0 marginHeight=0 src="$:data.gameurl" frameBorder=10 
+			width="100%" scrolling=no height="600px" >
+	
+	</iframe>
+	</div>
+
+</body>
+</html>
